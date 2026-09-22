@@ -19,4 +19,5 @@ If there's more than one image or sound, the first one alphabetically is used. I
 ## Credit
 
 Full credit to damoonlord for the base code and assets: 
+
 https://steamcommunity.com/sharedfiles/filedetails/?id=3497571857
