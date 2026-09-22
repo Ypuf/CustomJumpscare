@@ -16,6 +16,25 @@ Frames and how to set up ezgif here:
 
 If there's more than one image or sound, the first one alphabetically is used. If either is missing, the built in one is used instead. New files are used when the game starts or when the mod's settings are applied.
 
+## Steps to build
+
+1. Download the source, either with `git clone https://github.com/Ypuf/CustomJumpscare.git` or as a ZIP from GitHub into `Rain World/RainWorld_Data/StreamingAssets/mods/`
+2. Install the [.NET SDK](https://dotnet.microsoft.com/download) (version 9 or newer)
+3. Make sure Rain World has been launched at least once with mods enabled so BepInEx has generated `HOOKS-Assembly-CSharp.dll`
+4. Open a terminal in the `CustomJumpscare` folder and run:
+
+   ```
+   dotnet build -c Release
+   ```
+
+   If Rain World isn't installed at `C:\Program Files (x86)\Steam\steamapps\common\Rain World`, tell it where the game is:
+
+   ```
+   dotnet build -c Release -p:RainWorldDir="D:\SteamLibrary\steamapps\common\Rain World"
+   ```
+
+5. Copy `bin/Release/Jumpscare.dll` into the `plugins` folder, replacing the old one
+
 ## Credit
 
 Full credit to damoonlord for the base code and assets: 
