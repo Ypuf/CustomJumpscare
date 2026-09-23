@@ -1,7 +1,7 @@
 {
     "id": "ypuf.jumpscare",
     "name": "Custom chance for custom jumpscare every second",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "authors": "Ypuf",
     "description": "Code mostly taken from damoonlord.. with some fixes",
     "requirements": [],

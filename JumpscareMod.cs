@@ -8,7 +8,7 @@ using UnityEngine.Networking;
 
 namespace Jumpscare;
 
-[BepInPlugin("ypuf.jumpscare", "Custom chance for a custom jumpscare every second", "1.0.0")]
+[BepInPlugin("ypuf.jumpscare", "Custom chance for a custom jumpscare every second", "1.1.0")]
 public class JumpscareMod : BaseUnityPlugin
 {
 	private const string DefaultImage = "assets/Jumpscare_Image";
@@ -201,7 +201,7 @@ public class JumpscareMod : BaseUnityPlugin
 			JumpscareSprite.anchorY = 0f;
 			Jumpscare.AddChild(JumpscareSprite);
 		}
-		else if (JumpscareSprite.element.name != image)
+		else if (JumpscareSprite.element != Futile.atlasManager.GetElementWithName(image))
 		{
 			JumpscareSprite.SetElementByName(image);
 		}

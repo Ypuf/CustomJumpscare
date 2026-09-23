@@ -5,7 +5,7 @@
     <LangVersion>10</LangVersion>
     <AssemblyName>Jumpscare</AssemblyName>
     <RootNamespace>Jumpscare</RootNamespace>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <RainWorldDir>C:\Program Files (x86)\Steam\steamapps\common\Rain World</RainWorldDir>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
