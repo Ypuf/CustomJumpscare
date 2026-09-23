@@ -55,7 +55,7 @@ public class JumpscareMod : BaseUnityPlugin
 		if (!initialized)
 		{
 			initialized = true;
-			Options = new JumpscareOptions();
+			Options = new JumpscareOptions(CustomFolder);
 			Options.OnConfigChanged += LoadCustomFiles;
 			MachineConnector.SetRegisteredOI("ypuf.jumpscare", Options);
 		}
